@@ -1,0 +1,337 @@
+/*https://www.colourlovers.com/palette/808695/Beverly_Hills_Hotel
+ 0,24,24
+ 0,48,48
+ 24,120,120
+ 48,144,168
+ 96,168,168*/
+
+/* --------------Início da Estilização Header, Nav e Footer-------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid yellow;*/
+}
+
+body {
+  background-color: rgb(5, 26, 32);
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  text-align: right;
+  padding-bottom: 23px;
+  padding-right: 50px;
+}
+
+menu {
+  background-color: rgb(255, 255, 255);
+}
+
+menu img {
+  width: 180px;
+  height: auto;
+  margin-bottom: -90px;
+  padding-left: 8px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 7px;
+  transition: ease 0.3s;
+  border-radius: 4px;
+  background-color: rgb(5, 26, 32);
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+nav ul li:hover {
+  background-color: 24, 120, 120;
+}
+
+nav ul li a {
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14pt;
+  font-weight: 500;
+  color: rgba(241, 237, 229);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgba(241, 237, 229);
+}
+
+header {
+  height: 450px;
+  background-image: url("../img/fundo2.jpg");
+  background-size: 100%;
+  background-position: 0 -355px;
+  padding-top: 180px;
+}
+
+header a,
+#fechar {
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
+h1 {
+  text-align: center;
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50pt;
+  color: rgba(241, 237, 229);
+  text-shadow: 2px 3px 3px rgb(0, 0, 0);
+  margin-bottom: 100px;
+}
+
+footer {
+  height: 120px;
+  background-color: rgb(15, 3, 3);
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15pt;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  width: 50%;
+}
+
+#redes ul li {
+  display: inline-block;
+  padding-left: 13px;
+}
+
+#redes ul li a img {
+  width: 43px;
+  height: 43px;
+  /*mudar o ponteiro do mouse para uma mão*/
+  cursor: pointer;
+  transition: ease 1s;
+}
+
+#redes ul li a img:hover {
+  transform: scale(1.1);
+}
+
+/* --------------Fim da Estilização Header, Nav e Footer-------------- */
+
+/* --------------inicio do css home------------ */
+h2 {
+  font-family: "arial";
+  font-size: 20px;
+  margin: 50px;
+  /* ------------borda da tarde inferior(bottom) do h2----------- */
+  border-bottom: 1px solid tomato;
+  width: 500px;
+}
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "verdana";
+  font-size: 12pt;
+  line-height: 30pt; /*espaçamento entre linhas*/
+  text-align: justify;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  opacity: 0.7;
+  transition: ease 0.5s;
+  /* mudar o ponteiro do mause para uma mão */
+  cursor: pointer;
+}
+#imghome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* ----------fim do estilo da home------- */
+
+/* -----------inicio do estilo da historia------------ */
+#historia p {
+  width: 70%;
+  font-family: arial;
+  font-size: 12pt;
+  line-height: 30pt;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghistoria {
+  text-align: center;
+}
+
+#imghistoria img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+iframe {
+  width: 80%;
+  height: 500px;
+  margin: 20px;
+}
+/* --------fim do historia------ */
+
+/* -------inicio do cardapio-------- */
+
+h3 {
+  font-family: arial;
+  font-size: 40pt;
+  margin: 30px;
+}
+
+#linha {
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*quebra de linha*/
+  box-shadow: 2px 2px 10px black;
+  justify-content: center;
+}
+
+#linha div {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid silver;
+}
+
+#linha div img {
+  width: 100%;
+  height: 300px;
+}
+
+#linha div h4 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 10px;
+}
+
+#linha div p {
+  font-family: arial;
+  font-size: 15pt;
+  color: red;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* ------------ area dos brakpoints-------- */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) and (max-width: 575px) {
+  header {
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+  nav {
+    width: 150px;
+    height: 100vh; /*altura da tela do dispositivo*/
+    position: absolute; /*definindo uma posição "fixa" da tela*/
+    z-index: 10000; /*empilhamento. fazendo ficar acima de 9999 itens*/
+    top: 0; /*posição inicial de topo 0*/
+    left: -150px; /*posição inicial a esquerda 0*/
+    padding-top: 100px;
+    text-align: left;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  #imghome img {
+    border-radius: 0px;
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  #fechar {
+    opacity: 1;
+    color: black;
+    font-size: 30pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+  iframe {
+    width: 90%;
+  }
+
+  #linha {
+    flex-direction: column;
+  }
+  #linha div {
+    width: 95%;
+  }
+  main form {
+    width: 90%;
+  }
+}
+
+/* 
+criação de uma paleta de cores personalizadas 
+ */
+/* ...........cores para o fundo - prefixo bg......... */
+.bgPreto {
+  background-color: rgb(0, 0, 0);
+}
+.bgLaranja {
+  background-color: rgb(228, 143, 15);
+}
+.bgVermelho {
+  background-color: rgb(252, 19, 19);
+}
+/* cores para as letras prefixo tx */
+.txBranco {
+  color: rgb(250, 246, 246);
+}
+.txAmarelo {
+  color: rgb(218, 221, 32);
+}
+/* tamanho de letra */
+.t1 {
+  font-size: 50pt;
+}
+.t2 {
+  font-size: 40pt;
+}
+.t3 {
+  font-size: 25pt;
+}
+.t4 {
+  font-size: 18pt;
+}
+.p1 {
+  font-family: arial;
+  font-size: 15pt;
+}
+.p2 {
+  font-family: arial;
+  font-size: 12pt;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Atlântico Rio</title>
+    <!-- link para o arquivo de css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<menu>
+     <a href="index.html"><img src="img/logo.png" alt="Hotel Atlântico Rio"></a>
+</menu>
+
+<nav>
+    <a href="#" id="fechar" onclick="fechar()"> &times;</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiencia.html">Experiência</a></li>
+        <li><a href="estrutura.html">Estrutura</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+    </ul>
+</nav>
+
+<header>
+    <a href="#" onclick="abrir()">&#9776;</a>
+    <h1>Hotel Atlântico Rio</h1>
+</header>
+
+
+<main>
+    <h2>Bem Vindo a Nossa Cafeteria</h2>
+    <div id="home">
+        <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione molestias voluptatem quis, assumenda similique at officia modi saepe, omnis cupiditate cum laboriosam officiis eaque odit tempora aliquid obcaecati reiciendis.</span><span>Autem rem sit, quaerat, magni voluptas dolore sint nihil corrupti exercitationem praesentium quisquam molestiae aliquam saepe numquam, quia molestias delectus accusantium ipsum expedita perspiciatis voluptate officiis asperiores reiciendis. Ratione, quaerat.</span><span>Sit ea dolorem incidunt deleniti eaque totam nihil debitis dolores corrupti deserunt praesentium, voluptas expedita, iure magni in quam magnam iste quisquam laboriosam consequatur at nostrum. Repellendus voluptatibus eos magnam.</span><span>Aperiam porro vitae reprehenderit tempora harum assumenda iusto accusantium, ipsum tempore alias illo obcaecati dolorem qui, vel, facilis veniam ab numquam explicabo reiciendis consequuntur quo praesentium eaque. Quos, facere iusto!</span></p>
+    </div>
+<div id="imghome">
+    <img src="img/tomarcafe1.jpg" alt="pessoas na cafeteria">
+    <img src="img/tomarcafe2.jpg" alt="pessoas na cafeteria">
+</div>
+</main>
+
+<footer>
+    <div id="endereco">
+        <p>
+            Av. Atlântica, 1456
+            - Copacabana, Rio de Janeiro - RJ
+            CEP: 22021-000
+            Telefone: (21) 2543-4123
+        </p>
+    </div>
+    <div id="redes">
+        <ul>
+            <li><a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Nosso Instagram"></a></li>
+            <li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Nosso Facebook"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Nosso canal do YouTube"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="img/twitter.png" alt="Nosso Twitter"></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script>
+    function abrir(){
+        document.getElementsByTagName("nav")[0].style.left="0px";
+    }
+    function fechar(){
+        document.getElementsByTagName("nav")[0].style.left="-150px"
+    }
+</script>
+
+</body>
+</html>

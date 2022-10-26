@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Atlântico Rio</title>
+    <!-- link para o arquivo de css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="#" id="fechar" onclick="fechar()"> &times;</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiencia.html">Experiência</a></li>
+        <li><a href="estrutura.html">Estrutura</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+    </ul>
+</nav>
+
+<header>
+    <a href="#" onclick="abrir()">&#9776;</a>
+    <h1>Hotel Atlântico Rio</h1>
+</header>
+
+
+<main>
+    <h2>Confira Nosso Cardapio</h2>
+    <h3>Cafés</h3>
+
+    <!-- inicio da linha dos cafés -->
+    <div id="linha">
+        <div>
+            <img src="img/cafe19.jpeg" alt="Cafe especial">
+            <h4>Café Especial</h4>
+            <p>R$ 5,80</p>
+        </div>
+
+        <div>
+            <img src="img/cafe5.jpg" alt="Cafe moicano">
+            <h4>Café Moicano</h4>
+            <p>R$ 9,30</p>
+        </div>
+
+        <div>
+            <img src="img/cafe7.jpg" alt="Cafe com leite">
+            <h4>Café com leite</h4>
+            <p>R$ 7,60</p>
+        </div>
+
+        <div>
+            <img src="img/cafe6.jpg" alt="Cafe zero lactose">
+            <h4>Café zero lactoze</h4>
+            <p>R$ 10,80</p>
+        </div>
+
+        <div>
+            <img src="img/cafe9.jpg" alt="Cafe 3 coracões">
+            <h4>Café 3 coracões</h4>
+            <p>R$ 7,00</p>
+        </div>
+
+        <div>
+            <img src="img/cafe20.jpg" alt="Cafe zero">
+            <h4>Café zero</h4>
+            <p>R$ 9,00</p>
+        </div>
+
+
+
+    </div>
+    <!-- fim da linha dos cafes -->
+
+    <h3>Salgados</h3>
+
+    <!-- inicio da linha dos Salgados -->
+    <div id="linha">
+        <div>
+            <img src="img/salgado3.jpg" alt="Coxinha">
+            <h4>Coxinha</h4>
+            <p>R$ 5,00</p>
+        </div>
+
+        <div>
+            <img src="img/salgado9.jpeg" alt="Enrroladinho de Queijo">
+            <h4>CEnrroladinho de queijo</h4>
+            <p>R$ 6,30</p>
+        </div>
+
+        <div>
+            <img src="img/cafe7.jpg" alt="Cafe com leite">
+            <h4>Café com leite</h4>
+            <p>R$ 7,60</p>
+        </div>
+
+        <div>
+            <img src="img/cafe6.jpg" alt="Cafe zero lactose">
+            <h4>Café zero lactoze</h4>
+            <p>R$ 10,80</p>
+        </div>
+
+        <div>
+            <img src="img/cafe9.jpg" alt="Cafe 3 coracões">
+            <h4>Café 3 coracões</h4>
+            <p>R$ 7,00</p>
+        </div>
+
+        <div>
+            <img src="img/cafe20.jpg" alt="Cafe zero">
+            <h4>Café zero</h4>
+            <p>R$ 9,00</p>
+        </div>
+
+
+        
+    </div>
+    <!-- fim da linha dos cafes -->
+
+</main>
+
+<footer>
+    <div id="endereco">
+        <p>
+            Av. Atlântica, 1456
+            - Copacabana, Rio de Janeiro - RJ
+            CEP: 22021-000
+            Telefone: (21) 2543-4123
+        </p>
+    </div>
+    <div id="redes">
+        <ul>
+            <li><a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Nosso Instagram"></a></li>
+            <li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Nosso Facebook"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="img/youtube.png" alt="Nosso canal do YouTube"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="img/twitter.png" alt="Nosso Twitter"></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script>
+    function abrir(){
+        document.getElementsByTagName("nav")[0].style.left="0px";
+    }
+    function fechar(){
+        document.getElementsByTagName("nav")[0].style.left="-150px"
+    }
+</script>
+
+</body>
+</html>
+
+
